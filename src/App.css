@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+.hex {
+  display:inline-block;
+  margin-left:3px;
+  margin-bottom:-26px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hex .top {
+  width:0;
+  border-bottom :30px solid;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hex .middle {
+  width: 104px;
+  height: 60px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  /* background-color: grey; */
 }
 
-.App-link {
-  color: #61dafb;
+.hex .bottom {
+  width:0;
+  border-top :30px solid ;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.row {
+  clear:left;
+}
+
+.board {
+  width: 535px;
+  height: 535px;
+}
+
+.row-1 {
+  width:328px;
+  margin-left: 107px
+}
+
+.row-2 {
+  width: 428px;
+  margin-left: 53.5px;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.numbers {
+  font-size: 20px;
+}
+
+.three-row {
+  height: 90px;
+  float:left;
+  width:107px;
+  /* clear:both; */
+  /* background:yellow; */
+  display: inline-block;
+}
+.right-block {
+  height:90px;
+  float:right;
+  width:107px;
+  /* background:yellow; */
+}
+.four-row {
+  height:90px;
+  float:left;
+  width:53.5px;
+  clear:both;
+  margin-right:1px;
+  /* background:yellow; */
+
+}
+
+.five-row {
+  height:180px;
+  float:left;
+  width:0px;
+  clear:both;
+  background:yellow;
+
+}
+
+.six-row {
+  height:65px;
+  float:left;
+  width:0px;
+  clear:both;
+  margin-right:53.5px;
+  background:yellow;
+}
+
+.seven-row {
+  height:45px;
+  float:left;
+  width:0px;
+  clear:both;
+  margin-right:107px;
+  background:yellow;
 }
